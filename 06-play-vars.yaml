@@ -1,0 +1,11 @@
+- name: play level variable
+  hosts: local
+  vars: 
+    course: ansible
+    duration: 10HR
+    worker: naresh
+  tasks:
+  - name: print daily  work
+    ansible.builtin.debug:
+      msg:  "hello {{ course }} , daily work: {{ duration }}  {{ naresh }} is worker"
+
