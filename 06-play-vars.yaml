@@ -5,7 +5,8 @@
     duration: 10HR
     worker: naresh
   tasks:
-  - name: print daily  work
+  - name: print course  information
     ansible.builtin.debug:
-      msg:  "hello {{ course }},  daily work: {{ duration }},   worker is {{ worker }}"
+      msg:  "hello {{ course }},  daily work: {{ duration }},   trainer is {{ worker }}"
 
+ 
