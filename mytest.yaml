@@ -1,8 +1,8 @@
-- name: hello hi
+- name: routue
   hosts: localhost
   tasks: 
-  - name: hello 
+  - name: ip route
     ansible.builtin.debug:
-      msg: "hello world"
+      msg: "ip r"
 
 
