@@ -1,0 +1,6 @@
+- name: hello world
+  hosts: local
+  connection: local
+  ansible.builtin.debug:
+    msg: System {{ hello world }} has gateway {{ hello word }}
+
