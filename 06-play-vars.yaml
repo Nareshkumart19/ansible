@@ -7,5 +7,5 @@
   tasks:
   - name: print daily  work
     ansible.builtin.debug:
-      msg:  "hello {{ course }},  daily work: {{ duration }},   worker is {{ worker }}
+      msg:  "hello {{ course }},  daily work: {{ duration }},   worker is {{ worker }}"
 
