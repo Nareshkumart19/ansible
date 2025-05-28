@@ -6,6 +6,7 @@
     worker: naresh
   tasks:
   - name: print course  information
-    vars:  ansible
+    vars: 
+     course: ansible
     ansible.builtin.debug:
       msg:  "hello {{ course }},  daily work: {{ duration }},   trainer is {{ worker }}"
