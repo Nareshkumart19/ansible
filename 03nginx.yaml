@@ -3,7 +3,11 @@
   become: yes
   tasks:
     - name: Install Nginx
-      apt:
+      ansible.builtin.package:
         name: nginx
         state: present
-
+    - name: statrt Nginx
+      ansible.builtin.service:
+        name: nginx
+        state: statrt
+        enable: yes
