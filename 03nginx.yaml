@@ -9,5 +9,5 @@
     - name: statrt Nginx
       ansible.builtin.service:
         name: nginx
-        state: statrt
+        state: stated
         enable: yes
