@@ -1,0 +1,8 @@
+- name: rotue checking
+  hosts: localhost
+  task: 
+  - name:  route ip check
+    ansible.builtin.debug:
+      msg: "ip r"
+
+
