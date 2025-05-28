@@ -1,0 +1,25 @@
+- name: Install Nginx on localhost
+  hosts: localhost
+  become: yes
+  tasks:
+    - name: Install Nginx
+      dnf:
+        name: nginx
+        state: present
+
+    - name: Start Nginx service
+      service:
+        name: nginx
+        state: started
+        enabled: yes
+
+
+
+
+
+
+
+
+
+
+
