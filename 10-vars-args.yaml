@@ -1,0 +1,6 @@
+- name: play level variable
+  hosts: local
+  tasks:
+  - name: print course  information
+    ansible.builtin.debug:
+      msg:  "hello {{ course }},  daily work: {{ duration }},   trainer is {{ worker }}"
