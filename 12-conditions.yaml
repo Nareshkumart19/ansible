@@ -1,5 +1,6 @@
 - name: condition demo
   hosts: local
+  connection: local
   vars:
     NUMBER: 50
   tasks:
