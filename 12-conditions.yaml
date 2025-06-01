@@ -1,4 +1,4 @@
-- name: condition demo
+- name: conditions demo
   hosts: local
   connection: local
   vars:
@@ -11,5 +11,5 @@
 
 - name: print if the number  is grater then or equal to 100
   ansible.builtin.debug:
-    msg: "given number {{ NUMBER }} is grater than"
+    msg: "given number {{ NUMBER }} is grater than 100"
     when: NUMNER > 100
