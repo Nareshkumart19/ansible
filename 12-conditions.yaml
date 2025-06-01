@@ -10,5 +10,5 @@
 
 - name: print if the number  is grater then or equal to 100
   ansible.builtin.debug:
-    msg: "given number {{ NUMBER }} is grater than 
+    msg: "given number {{ NUMBER }} is grater than"
     when: NUMNER > 100
