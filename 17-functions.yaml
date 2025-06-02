@@ -1,8 +1,8 @@
 - name: functions
   hosts: frontend
   become: yes
-  vars:
-    fruits: "apple,banana,orange"
+  #vars:
+  #  fruits: "apple,banana,orange"
   tasks:
   - name: check undefined variable
     ansible.builtin.debug:
