@@ -1,8 +1,9 @@
 - name: install package
   hosts: frontend
+  become: yes
   tasks:
   - name: install packages
-    ansible.builttin.package:
+    ansible.builtin.package:
       name: "{{ item.name }}"
       state: "{{ item.state }}"
     loops:
