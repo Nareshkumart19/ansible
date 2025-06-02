@@ -6,7 +6,7 @@
   tasks:
   - name: check undefined variable
     ansible.builtin.debug:
-      msg: " {{ fruits | default }}"
+      msg: " {{ fruits | default ('banana') }}"
   
   - name: print fruits
     ansible.builtin.debug:
