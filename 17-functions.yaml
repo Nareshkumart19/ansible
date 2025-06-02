@@ -3,7 +3,7 @@
   become: yes
   vars:
     fruits: "apple,banana,orange"
-  takas:
+  tasks:
   - name: check undefined variable
     ansible.builtin.debug:
       msg: " {{ fruits | default }}"
