@@ -8,6 +8,6 @@
     ansible.builtin.debug:
       msg: " {{ fruits | default }}"
   
-  - name: check undefined variable
-    ansible.builtin.split :
+  - name: print fruits
+    ansible.builtin.debug:
       msg: "{{ fruits | split(',') }}"
