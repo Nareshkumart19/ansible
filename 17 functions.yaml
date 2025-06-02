@@ -1,0 +1,9 @@
+- name: functions
+  hosts: frontend
+  become: yes
+  vars:
+    fruits: apple,banana,orange
+  takas:
+  - name: check undefined variable
+    ansible.builtin.debug:
+      msg: " {{ fruits | default }}"
